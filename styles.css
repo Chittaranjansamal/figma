@@ -1,6 +1,6 @@
 body {
     background-color: #232830;
-    padding: 0 200px;
+    padding: 0 14vw;
 }
 .homepage {
     display: flex;
@@ -14,12 +14,12 @@ body {
     color: #F9FAF8;
 }
 .brand {
-    font-size: 30px;
+    font-size: 3vw;
 }
 .menus {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 }
 .group5 {
@@ -44,8 +44,9 @@ body {
     color: #FF7575;
     /* font-weight: 400; */
     font-style: italic;
-    font-size: 40px;
-    /* line-height: 85px */
+    font-size: 5vw;
+    align-self: center;
+    justify-content: center;
 }
 #intro2 {
     color: #FFFFFF;
@@ -61,29 +62,39 @@ body {
     justify-content: space-between;
     color: #909090;
     align-items: center;
-    padding-bottom: 60px ;
+    /* padding-bottom: 60px ; */
 }
  
 .container {
-    display: grid;
+    /* display: grid;
     grid-row: 3;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr) ; */
+    
     height: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 .boxes {
     border-radius: 16px;
     border: 2px solid rgb(121, 119, 119);
     background-color: #FFFFFF;
-    
+    width: 32%;
+    padding-bottom: 3%;
+    margin-bottom: 20px;
 }
 img {
-    width: 240px;
-    height: auto;
+    width: 88%;
+    height: 39% ;
     /* background-color: #3882F6; */
     border-radius: 16px;
-    margin:16px 16px 0 16px;
+    margin: 6% 6% 0 6%;
+}
+.boxes:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
 }
 .pagination{
     display: flex;
@@ -95,29 +106,49 @@ img {
     }
 .line2{
     height: 2px;
-    width: 25px; 
+    width: 1.5rem; 
     align-items: center; 
     background-color:#FF7575;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .pages{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1rem;
     color:rgb(121, 119, 119) ;
     }
 
 #two{
     color: #FF7575;
+    text-decoration: #FF7575 overline ;
 }
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 4rem;
 }
 .footertext{
     background-color: #3882F6;
     padding: 4px;
     border-radius: 4px;
+}
+.catagorie :hover{
+    border: 1px solid #1656bc;
+    border-radius: 4px;
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+.footertext :hover{
+    background-color: #FF7575;
+}
+@media (max-width:1000px) {
+    .boxes{
+        width: 48%;
+    }
+}
+@media (max-width:750px) {
+    .boxes{
+        width: 62%;
+    }
 }
 
